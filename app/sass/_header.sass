@@ -1,0 +1,135 @@
+header
+  .header-top
+    display: flex
+    justify-content: center
+    .header-top-wrapper
+      padding: 25px 0 35px 0
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      .logo
+        height: 90px
+        width: 70px
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+      .search-header
+        display: flex
+        align-items: center
+        position: relative
+        input:first-child,  input:last-child
+          border: none
+          height: 35px
+          outline: none
+        input:first-child
+          width: 395px
+          padding: 0 15px
+          border-radius: 5px 0 0 5px
+          background-color: rgba(240, 240, 240, 1)
+          &[placeholder]
+            font-size: 14px
+            font-family: 'Montserrat', sans-serif
+        input:last-child
+          border: none
+          background-color: rgba(0, 153, 210, 1)
+          width: 35px
+          border-radius: 0 5px 5px 0
+          position: relative
+          display: block
+          cursor: pointer
+        &:after
+          content: ''
+          background-image: url(../img/glass.png)
+          background-repeat: no-repeat
+          background-position: center
+          position: absolute
+          height: 35px
+          width: 35px
+          right: 0
+          bottom: calc(50% - 17px)
+          cursor: pointer
+      .service-block
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        .login-icon, .bag-block
+          display: flex
+          flex-direction: column
+          cursor: pointer
+          img
+            width: 45px
+            height: 45px
+            margin-bottom: 10px
+          span
+            color: rgba(145, 145, 145, 1)
+        .login-icon
+          margin-right: 35px
+        .bag-quantity
+          height: 18px
+          width: 18px
+          border-radius: 50%
+          background-color: rgba(0, 153, 210, 1)
+          color: rgba(255, 255, 255, 1)
+          display: flex
+          justify-content: center
+          align-items: center
+          position: absolute
+          top: 0px
+          right: -3px
+  .header-bottom
+    height: 45px
+    display: flex
+    justify-content: center
+
+    .header-bottom-wrapper
+      height: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      background-color: rgba(220, 238, 247, 1)
+      margin: 0 -45px
+      padding: 0 45px
+      nav
+        flex: 1 1 90%
+        ul
+          display: flex
+          justify-content: space-between
+          li
+
+            a
+              text-decoration: none
+              font-size: 16px
+              color: rgba(47, 47, 47, 1)
+              transition: color .25s
+              &:hover
+                color: rgba(0, 153, 210, 1)
+            &:not(:last-child)
+              margin-right: 10px
+
+
+      .font-size-block
+        flex: 1 1 10%
+        display: flex
+        justify-content: space-around
+        padding: 0 15px
+        span
+          text-transform: uppercase
+          display: flex
+          align-items: center
+          justify-content: center
+          width: 25px
+          height: 25px
+          transition: all .25s
+          cursor: pointer
+          &:hover
+            border-radius: 50%
+            background-color: rgba(0, 153, 210, 1)
+        span:nth-child(1)
+          font-size: 12px
+        span:nth-child(2)
+          font-size: 14px
+        span:nth-child(3)
+          font-size: 16px
+
