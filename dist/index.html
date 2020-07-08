@@ -5,647 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="libs/reset-css/reset.css">
-    <link rel="stylesheet" type="text/css" href="libs/fontawesome-free-5.13.0-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body>
-    <header id="header">
-      <div class="container">
-        <div class="headerBlock mobile"><a href="#">BeOnePage</a>
-          <nav id="headerMenu" class="headerMenu">
-            <ul>
-              <li><a href="#sectionOne"><i class="fas fa-home"></i>home<i class="fas fa-circle"></i></a></li>
-              <li><a href="#sectionTwo"><i class="fas fa-video"></i>service<i class="fas fa-circle"></i></a></li>
-              <li><a href="#sectionThree"><i class="fas fa-user"></i>portfolio<i class="fas fa-circle"></i></a></li>
-              <li><a href="#sectionFour"><i class="fas fa-users"></i>team<i class="fas fa-circle"></i></a></li>
-              <li><a href="#sectionProcess"><i class="fas fa-envelope"></i>testimonial<i class="fas fa-circle"></i></a></li>
-              <li><a href="#sectionSeven"><i class="fas fa-server"></i>blog<i class="fas fa-circle"></i></a></li>
-              <li><a href="#"><i class="fa fa-home"></i>shop<i class="fas fa-circle"></i>
-                  <ul class="dropdown">
-                    <li><a href="#">cart</a></li>
-                    <li><a href="#">checkout</a></li>
-                  </ul></a></li>
-              <li><a href="#sectionEight"><i class="fas fa-envelope"></i>contact<i class="fas fa-circle"></i></a></li>
-              <li><a href="#"><i class="fas fa-th-large"></i>page
-                  <ul class="dropdown">
-                    <li><a href="#">typography</a></li>
-                    <li><a href="#">404</a></li>
-                  </ul></a></li>
-            </ul>
-          </nav>
-          <div id="burgerButton" class="burgerButton"><span></span><span></span><span></span></div>
+    <header class="header">
+      <section class="header-top">
+        <div class="container">
+          <div class="header-top-wrapper">
+            <div class="logo"><img src="img/logo-header.png"></div>
+            <div class="search-header">
+              <input type="search" placeholder="Type in to Search...">
+              <div class="button-search">
+                <input type="submit" value="">
+              </div>
+            </div>
+            <div class="service-block">
+              <div class="login-icon"><img src="img/account.png"><span>Login</span></div>
+              <div class="bag-block"><img src="img/bag.png"><span>My Bag</span></div><span class="bag-quantity">1</span>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="header-bottom">
+        <div class="container">
+          <div class="header-bottom-wrapper">
+            <nav>
+              <ul>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Our Jobs</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Fresh News</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Our Shop</a></li>
+                <li><a href="#">Sale</a></li>
+              </ul>
+            </nav>
+            <div class="mobile-button-wrapper">
+              <div class="mobile-button"><span></span><span></span><span></span></div>
+            </div>
+            <div class="font-size-block"><span>a</span><span>a</span><span>a</span></div>
+          </div>
+        </div>
+      </section>
     </header>
-    <section id="sectionOne" class="sectionOne">
-      <div id="sliderWrapper" class="sliderWrapper"><a href="#sectionTwo" id="mouseWrapper" class="mouseWrapper">
-          <div class="scrollLine"></div></a>
-        <div id="leftButton" class="sliderButton leftArrow"><i class="fas fa-chevron-left"></i></div>
-        <div id="rightButton" class="sliderButton rightArrow"><i class="fas fa-chevron-right"></i></div>
-        <div id="sliderBlock" class="sliderBlock">
-          <div class="sliderItem"><img src="img/background.jpg">
-            <div class="sliderHeadline">
-              <h2>be &nbsp<span>imaginative &nbsp</span>be &nbsp<span>yourself</span></h2>
-              <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p><a href="#" class="firstButton">by now</a>
-            </div>
-          </div>
-          <div class="sliderItem"><img src="img/zvezdnoe_nebo_noch_derevya_nochnoj_pejzazh_118760_1920x1080.jpg">
-            <div class="sliderHeadline">
-              <h2>be &nbsp<span>imaginative &nbsp</span>be &nbsp<span>yourself</span></h2>
-              <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p><a href="#" class="firstButton">by now</a>
-            </div>
-          </div>
-          <div class="sliderItem"><img src="img/zvezdnoe_nebo_zvezdy_mlechnyj_put_119841_1920x1080.jpg">
-            <div class="sliderHeadline">
-              <h2>be &nbsp<span>imaginative &nbsp</span>be &nbsp<span>yourself</span></h2>
-              <p>Lorem Ipsum Dolor Sit Amet, Consectetur.</p><a href="#" class="firstButton">by now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sectionTwo" class="sectionTwo">
-      <div class="container">
-        <div class="sectionSkillsBlock">
-          <h3 class="action about">ABOUT &nbsp<span>BETHEME</span></h3>
-          <p class="action about">First you should know</p>
-          <div class="lineWrapper"></div>
-          <div class="skillsWrapper">
-            <div class="infoBlock">
-              <p class="topInfoBlock">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Aperiam at
-                blanditiis, consequatur dignissimos distinctio
-                illo ipsum libero maiores necessitatibus nemo pariatur,
-              </p>
-              <p class="bottomInfoBlock">
-                Lorem ipsum dolor sit amet,
-                onsectetur adipisicing elit. A aperiam,
-                blanditiis consectetur consequatur dicta
-                dolorum, earum fugiat hic inventore nam
-                natus odio, porro praesentium quas repellat
-                sapiente voluptate voluptatibus voluptatum!
-              </p>
-            </div>
-            <div class="skillsBlock">
-              <div class="itemSkills">
-                <h5>WEB DESIGN</h5>
-                <div class="lineSkills"><span class="sliderSkills">80%</span></div>
-              </div>
-              <div class="itemSkills">
-                <h5>WEB DEVELOPMENT</h5>
-                <div class="lineSkills"><span class="sliderSkills">95%</span></div>
-              </div>
-              <div class="itemSkills">
-                <h5>SEARCH ENGINE OPTIMIZATION</h5>
-                <div class="lineSkills"><span class="sliderSkills">85%</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sectionServicesBlock">
-          <h3 class="action services">OUR &nbsp<span>SERVICES</span></h3>
-          <p class="action services">We provide a complete list of best digital services</p>
-          <div class="lineWrapper"></div>
-          <div class="servicesWrapper">
-            <div class="itemService">
-              <div class="imageItem"><i class="fab fa-amazon"></i></div>
-              <div class="headlineItem"><span>BRANDING &nbsp</span><span>DESIGN</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-            <div class="itemService">
-              <div class="imageItem"><i class="fas fa-laptop"></i></div>
-              <div class="headlineItem"><span>web &nbsp</span><span>DESIGN</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-            <div class="itemService">
-              <div class="imageItem"><i class="fas fa-video"></i></div>
-              <div class="headlineItem"><span>video &nbsp</span><span>PRODUCTION</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-            <div class="itemService">
-              <div class="imageItem"><i class="fas fa-microphone"></i></div>
-              <div class="headlineItem"><span>MARKETING</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-            <div class="itemService">
-              <div class="imageItem"><i class="fas fa-cogs"></i></div>
-              <div class="headlineItem"><span>development</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-            <div class="itemService">
-              <div class="imageItem"><i class="fas fa-camera"></i></div>
-              <div class="headlineItem"><span>PHOTOGRAPHY</span></div>
-              <p class="descriptionItem">
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Commodi dignissimos
-                minima quis. Ad adipisci animi culpa dolores officia
-                praesentium ratione!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sectionThree" class="sectionThree">
-      <div class="sectionOurWorks">
-        <h3 class="action works">OUR LATEST WORKS</h3>
-        <p class="action works">An eye for detail makes our works excellent</p>
-        <div class="lineWrapperOurWorks"></div>
-        <div class="ourWorksButtonWrapper">
-          <button class="ourWorksButton">Show All</button>
-          <button class="ourWorksButton">Audio</button>
-          <button class="ourWorksButton">Design</button>
-          <button class="ourWorksButton">Gallery</button>
-          <button class="ourWorksButton">Image</button>
-          <button class="ourWorksButton">Mixcloud</button>
-          <button class="ourWorksButton">Slideshare</button>
-          <button class="ourWorksButton">Soundcloud</button>
-          <button class="ourWorksButton">Video</button>
-          <button class="ourWorksButton">Vimeo</button>
-          <button class="ourWorksButton">Youtube</button>
-        </div>
-        <div class="ourWorksWrapper">
-          <figure class="ourWorksItem"><img src="img/fancy-items-scene-generator-300x200.jpg">
-            <figcaption>
-              <h6>Fancy Items Scene Generator</h6>
-              <p>Design, Image</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-1-1024x682.jpeg">
-            <figcaption>
-              <h6>I am Creator</h6>
-              <p>Design, Gallery</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-2-1024x682.jpeg">
-            <figcaption>
-              <h6>Jazzee Daddee – Mack Daddy</h6>
-              <p>Audio, SoundCloud</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-3-1024x682.jpeg">
-            <figcaption>
-              <h6>Jason Paul’s Freerunning Illusions</h6>
-              <p>Video, YouTube</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-4-1024x682.jpeg">
-            <figcaption>
-              <h6>ABADDON</h6>
-              <p>Video, Vimeo</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-5-1024x682.jpeg">
-            <figcaption>
-              <h6>iMac 5K Retina Mockup</h6>
-              <p>Design, Gallery</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-7.jpeg">
-            <figcaption>
-              <h6>Seeks Beats : Chris Bassett Mix</h6>
-              <p>Audio, Mixcloud</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-9-720x480.jpg">
-            <figcaption>
-              <h6>iGravertical Screen Layers</h6>
-              <p>Design, Image</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-10-720x480.png">
-            <figcaption>
-              <h6>We’re Going Home</h6>
-              <p>Audio, SoundCloud</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/igravertical-screen-layers-720x480.jpg">
-            <figcaption>
-              <h6>Fungus: The Plastic of the Future</h6>
-              <p>Video, YouTube</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/imac-5k-retina-mockup-1-1024x682.jpg">
-            <figcaption>
-              <h6>FOXED!</h6>
-              <p>Video, Vimeo</p>
-            </figcaption>
-          </figure>
-          <figure class="ourWorksItem"><img src="img/i-am-creator-8-1024x682.jpeg">
-            <figcaption>
-              <h6>Art and Design</h6>
-              <p>SlideShare, Video</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section id="sectionFour" class="sectionFour">
-      <div class="blockOrange"></div>
-      <div class="container">
-        <div class="sectionOurTeam">
-          <h3 class="action team">TEAM  &nbsp<span>MEMBERS</span></h3>
-          <p class="action team">We're the best professionals in this field</p>
-          <div class="lineWrapper"></div>
-          <div class="ourTeamWrapper">
-            <div class="ourTeamItem">
-              <figure class="teamMember"><img src="img/team-member-1.jpg">
-                <figcaption><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut deleniti doloribus ea fugiat id ipsa, iusto laboriosam laudantium modi molestias necessitatibus nemo non optio, placeat repellendus voluptatum! Adipisci asperiores earum illum in praesentium quia voluptas! Ad, commodi cupiditate deserunt dolore earum est hic magni pariatur quia voluptatum.</span>
-                  <div class="socialBlock"><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-google-plus-g"></i></div>
-                </figcaption>
-              </figure><span>JULIA ROBERTS</span>
-              <p>Marketing Director</p>
-            </div>
-            <div class="ourTeamItem">
-              <figure class="teamMember"><img src="img/team-member-2.jpg">
-                <figcaption><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid eius impedit ipsum laboriosam perferendis porro quasi quidem velit. A ab aliquid aspernatur deleniti et mollitia rerum suscipit velit.</span>
-                  <div class="socialBlock"><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-google-plus-g"></i></div>
-                </figcaption>
-              </figure><span>ENN ROBERTS</span>
-              <p>Creative Director</p>
-            </div>
-            <div class="ourTeamItem">
-              <figure class="teamMember"><img src="img/team-member-3.jpg">
-                <figcaption><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid eius impedit ipsum laboriosam perferendis porro quasi quidem velit. A ab aliquid aspernatur deleniti et mollitia rerum suscipit velit.</span>
-                  <div class="socialBlock"><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-google-plus-g"></i></div>
-                </figcaption>
-              </figure><span>JOHN CAPONE</span>
-              <p>Brand & Web Art Director</p>
-            </div>
-            <div class="ourTeamItem">
-              <figure class="teamMember"><img src="img/team-member-4.jpg">
-                <figcaption><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aliquid eius impedit ipsum laboriosam perferendis porro quasi quidem velit. A ab aliquid aspernatur deleniti et mollitia rerum suscipit velit.</span>
-                  <div class="socialBlock"><i class="fab fa-twitter"></i><i class="fab fa-facebook-f"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-google-plus-g"></i></div>
-                </figcaption>
-              </figure><span>MARLON LEEND</span>
-              <p>Head Phographer</p>
-            </div>
-          </div>
-        </div>
-        <div id="sectionProcess" class="sectionProcess">
-          <h3 class="action process">PROCESS   &nbsp<span>FLOW</span></h3>
-          <p class="action process">How is our work</p>
-          <div class="lineWrapper"></div>
-          <div class="processButtonWrapper">
-            <div class="processItem One"><i class="fas fa-coffee"></i><span>discuss</span></div>
-            <div class="processItem"><i class="fas fa-pencil-alt"></i><span>creative concept</span></div>
-            <div class="processItem"><i class="fab fa-telegram-plane"></i><span>production</span></div>
-            <div class="processItem"><i class="fas fa-smile"></i><span>happy client</span></div>
-          </div>
-          <div class="sliderInfo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur dolore dolorum impedit labore nostrum praesentium sit! Adipisci blanditiis dignissimos earum enim, esse exercitationem, explicabo facere nemo, numquam officiis repudiandae similique tempore unde veritatis voluptatibus. Adipisci atque consequatur eum fugit harum maiores nesciunt sequi unde veniam voluptatibus. Aspernatur assumenda, atque cumque doloremque facere hic libero magni minima ratione vitae. Dicta.</p>
-          </div>
-        </div>
-      </div>
-      <div class="statisticsWrapper">
-        <div class="statisticsItem">
-          <p>698</p><span>HAPPY CLIENTS</span>
-        </div>
-        <div class="statisticsItem">
-          <p>988</p><span>WINNING AWARDS</span>
-        </div>
-        <div class="statisticsItem">
-          <p>322</p><span>CUPS OF COFFEE</span>
-        </div>
-        <div class="statisticsItem">
-          <p>520</p><span>POSITIVE FEEDBACK</span>
-        </div>
-        <div class="statisticsItem">
-          <p>225</p><span>FINISHED PROJECTS</span>
-        </div>
-        <div class="statisticsItem">
-          <p>103</p><span>OWN PROJECTS</span>
-        </div>
-      </div>
-    </section>
-    <section class="sectionFive">
-      <div class="container">
-        <div class="sectionFiveBlock">
-          <h3 class="action why">WHY   &nbsp<span>BEONEPAGE</span></h3>
-          <p class="action why">Perfect to promote your creative business</p>
-          <div class="lineWrapper"></div>
-          <div class="whyWeWrapper">
-            <div class="whyWeBlock left">
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-tablet-alt"></i></div><span>RESPONSIVE & RETINA READY</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-rocket"></i></div><span>ONE-PAGE & PARALLAX</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-folder"></i></div><span>BEAUTIFUL AJAX PORTFOLIO</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-            </div>
-            <div class="whyWeBlock"><img src="img/icon-service-img.png"></div>
-            <div class="whyWeBlock">
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-sliders-h"></i></div><span>EASY TO CUSTOMIZE</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-server"></i></div><span>front page module builder</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-              <div class="whyWeItem">
-                <div class="whyWeItemCircle"><i class="fas fa-magic"></i></div><span>UNLIMITED TYPOGRAPHY & COLORS</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Accusamus atque consequuntur cupiditate
-                  deserunt eaque nam, quidem quis quo saepe vitae!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="clientsFeedbackBlock">
-          <h3 class="action clients">WHAT   &nbsp<span>CLIENTS &nbsp</span>SAY</h3>
-          <p class="action clients">Why our customers love us</p>
-          <div class="lineWrapper"></div>
-          <div class="feedbackBlock">
-            <div class="feedbackWrapper owl-carousel">
-              <div class="feedbackItem"><i class="fas fa-quote-left"></i><span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Amet beatae corporis dolore ducimus earum, est nihil quae
-                  quisquam tempora velit.</span>
-                <div class="clientBlock">
-                  <div class="clientBlockImg"><img src="img/testimonial-1.png"></div><span>Katy Perry &nbsp</span>
-                  <p>Company Inc.</p>
-                </div>
-              </div>
-              <div class="feedbackItem"><i class="fas fa-quote-left"></i><span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Amet beatae corporis dolore ducimus earum, est nihil quae
-                  quisquam tempora velit.</span>
-                <div class="clientBlock">
-                  <div class="clientBlockImg"><img src="img/testimonial-2.png"></div><span>Steve Jobs &nbsp</span>
-                  <p>CEO</p>
-                </div>
-              </div>
-              <div class="feedbackItem"><i class="fas fa-quote-left"></i><span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Amet beatae corporis dolore ducimus earum, est nihil quae
-                  quisquam tempora velit.</span>
-                <div class="clientBlock">
-                  <div class="clientBlockImg"><img src="img/testimonial-2.png"></div><span>Steve Jobs &nbsp</span>
-                  <p>CEO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="brandsBlock">
-          <div class="brandsWrapper owl-carousel">
-            <div class="brandImg"><img src="img/client-1.png"></div>
-            <div class="brandImg"><img src="img/client-2.png"></div>
-            <div class="brandImg"><img src="img/client-3.png"></div>
-            <div class="brandImg"><img src="img/client-4.png"></div>
-            <div class="brandImg"><img src="img/client-5.png"></div>
-            <div class="brandImg"><img src="img/client-7.png"></div>
-            <div class="brandImg"><img src="img/client-8.png"></div>
-            <div class="brandImg"><img src="img/client-10.png"></div>
-          </div>
-        </div>
-      </div>
-      <div class="videoBlock">
-        <video src="img/f.mp4" autoplay muted loop></video>
-        <div class="videoInfoBlock">
-          <h3 class="action video">WE ARE    &nbsp<span>BETHEME</span></h3>
-          <p class="action video">We build more than just Themes. We build User Experience for both, you and your visitors.</p>
-          <button class="videoButton">learn more</button>
-        </div>
-      </div>
-    </section>
-    <section class="sectionSix">
-      <div class="container">
-        <div class="sectionSixBlock">
-          <h3 class="action plans">SEE OUR<span>PLANS</span></h3>
-          <p class="action plans">Find the plan that fits your needs</p>
-          <div class="lineWrapper"></div>
-          <div class="plansWrapper">
-            <div class="plansItem">
-              <h5>PERSONAL</h5>
-              <div class="plansCircle"><span>$29</span>
-                <p>Monthly</p>
-              </div>
+    <section class="section-one">
+      <div class="slider-block">
+        <div class="slider-left-button"></div>
+        <div class="slider-wrapper">
+          <div class="slider-item"><img src="img/breather-196132.png">
+            <div class="slider-item-info">
+              <h2>Workspace</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam autem cupiditate excepturi iusto laborum quam quis?
-                Provident quam voluptate voluptatum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                do eiusmod tempor incididunt ut labore et dolore magna.
               </p>
-              <button class="plansButton">start free trial</button>
             </div>
-            <div class="plansItem"><span class="star"><i class="fas fa-star"></i></span>
-              <h5>PROFESSIONAL</h5>
-              <div class="plansCircle"><span>$99</span>
-                <p>Monthly</p>
-              </div>
+          </div>
+          <div class="slider-item"><img src="img/breather-196132.png">
+            <div class="slider-item-info">
+              <h2>Workspace</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam autem cupiditate excepturi iusto laborum quam quis?
-                Provident quam voluptate voluptatum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                do eiusmod tempor incididunt ut labore et dolore magna.
               </p>
-              <button class="plansButton">buy now</button>
             </div>
-            <div class="plansItem">
-              <h5>PREMIUM</h5>
-              <div class="plansCircle"><span>$249</span>
-                <p>Monthly</p>
-              </div>
+          </div>
+          <div class="slider-item"><img src="img/breather-196132.png">
+            <div class="slider-item-info">
+              <h2>Workspace</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam autem cupiditate excepturi iusto laborum quam quis?
-                Provident quam voluptate voluptatum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                do eiusmod tempor incididunt ut labore et dolore magna.
               </p>
-              <button class="plansButton">order now</button>
+            </div>
+          </div>
+          <div class="slider-item"><img src="img/breather-196132.png">
+            <div class="slider-item-info">
+              <h2>Workspace</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+          </div>
+          <div class="slider-item"><img src="img/breather-196132.png">
+            <div class="slider-item-info">
+              <h2>Workspace</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                do eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="followBlock">
-        <div class="followItem">
-          <div class="followItemCircle"><i class="fab fa-twitter"></i></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, rem.</p>
-          <button class="followItemButton">follow us</button>
-        </div>
+        <div class="slider-dots"></div>
+        <div class="slider-right-button"></div>
       </div>
     </section>
-    <section id="sectionSeven" class="sectionSeven">
-      <div class="sectionOurBlog">
-        <h3 class="action blog">OUR LATEST BLOG</h3>
-        <p class="action blog">We share our best ideas in our blog</p>
-        <div class="lineWrapperOurBlogs"></div>
-        <div class="blogWrapper">
-          <figure class="blogItem">
-            <div class="blogItemSlider">
-              <div class="blogItemSliderItem"><img src="img/post-format-gallery-01-925x695.jpg">
-                <div class="dataBlock">
-                  <div class="dataBlockTop"><span>13</span><span>sep</span></div>
-                  <div class="dataBlockBottom"><span>read more</span></div>
-                </div>
-              </div>
-            </div>
-            <figcaption>
-              <h5>Post Format: Gallery</h5>
-              <p>Posted in Post</p>
-            </figcaption>
-          </figure>
-          <figure class="blogItem">
-            <div class="blogItemImg"><img src="img/post-format-gallery-10-925x695.jpg">
-              <div class="dataBlock">
-                <div class="dataBlockTop"><span>13</span><span>sep</span></div>
-                <div class="dataBlockBottom"><span>read more</span></div>
-              </div>
-            </div>
-            <figcaption>
-              <h5>Post Format: SoundCloud Audio</h5>
-              <p>Posted in Audio, Post</p>
-            </figcaption>
-          </figure>
-          <figure class="blogItem">
-            <div class="blogItemImg"><img src="img/post-format-image-925x695.jpg">
-              <div class="dataBlock">
-                <div class="dataBlockTop"><span>13</span><span>sep</span></div>
-                <div class="dataBlockBottom"><span>read more</span></div>
-              </div>
-            </div>
-            <figcaption>
-              <h5>Post Format: Image</h5>
-              <p>Posted in Image, Post</p>
-            </figcaption>
-          </figure>
-          <figure class="blogItem readMore">
-            <div class="blogItemImg"><i class="fas fa-external-link-alt"></i>
-              <p>view more</p>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section id="sectionEight" class="sectionEight">
+    <section class="section-two">
       <div class="container">
-        <div class="sectionEightBlock">
-          <div class="subscribeBlock">
-            <div class="subscribeBlockInfo">
-              <div class="subscribeBlockHeadline"><span>Subscribe &nbsp</span><span>to Our &nbsp</span><span>Newsletter</span></div>
-              <p>We make sure you do not miss any news.</p>
-            </div>
-            <div class="subscribeBlockInput">
-              <input type="email" placeholder="Enter your email address...">
-              <button class="subscribeButton">Notify Me</button>
+        <div class="headline">
+          <h2>Latest News</h2>
+        </div>
+        <div class="news-wrapper">
+          <div class="news-item">
+            <div class="news-block-image"><img src="img/photo-1434494878577-86c23bcb06b9.png"></div>
+            <div class="news-info-block">
+              <h3>smart watches</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </p>
+              <button class="news-info-block-button">Read More</button>
             </div>
           </div>
-          <div class="formBlock">
-            <h3 class="action contact">  CONTACT    &nbsp<span>US</span></h3>
-            <p class="action contact"> We'd love to hear your feedback.</p>
-            <div class="lineWrapper"></div>
-            <div class="formBlockWrapper">
-              <div class="leftFormBlockWrapper">
-                <div class="leftFormBlockItem">
-                  <div class="leftFormBlockItemInfo">
-                    <p>CALL US</p><span>0123-456-789</span>
-                  </div>
-                  <div class="leftFormBlockItemImg"><i class="fas fa-phone-alt"></i></div>
-                </div>
-                <div class="leftFormBlockItem">
-                  <div class="leftFormBlockItemInfo">
-                    <p>ADDRESS</p><span>345 Spear Street, San Francisco, CA</span>
-                  </div>
-                  <div class="leftFormBlockItemImg"><i class="fas fa-map-marker-alt"></i></div>
-                </div>
-                <div class="leftFormBlockItem">
-                  <div class="leftFormBlockItemInfo">
-                    <p>SAY HELLO</p><span>hi@betheme.me</span>
-                  </div>
-                  <div class="leftFormBlockItemImg"><i class="fas fa-envelope"></i></div>
-                </div>
-              </div>
-              <form class="rightFormBlockWrapper">
-                <div class="inputLineTop">
-                  <input placeholder="Name">
-                  <input placeholder="Email">
-                  <input placeholder="Phone">
-                </div>
-                <input type="text" placeholder="Subject" class="subject">
-                <textarea placeholder="Message"></textarea>
-                <input type="text" placeholder="3 + 45 = ?" class="capcha">
-                <div class="checkBox">
-                  <input type="checkbox" id="check">
-                  <label for="check">By filling out this form and clicking submit, you agree to our .</label>
-                </div>
-                <button class="formButton">send</button>
-              </form>
+          <div class="news-item">
+            <div class="news-block-image"><img src="img/2942.png"></div>
+            <div class="news-info-block">
+              <h3>POPULAR DESIGN NEWS</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </p>
+              <button class="news-info-block-button">Read More</button>
+            </div>
+          </div>
+          <div class="news-item reverse">
+            <div class="news-block-image"><img src="img/coffee-laptop-notebook-working.png"></div>
+            <div class="news-info-block">
+              <h3>20 best new websites</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </p>
+              <button class="news-info-block-button">Weiterlesen</button>
+            </div>
+          </div>
+          <div class="news-item reverse">
+            <div class="news-block-image"><img src="img/1837.png"></div>
+            <div class="news-info-block">
+              <h3>wat’s new</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt.
+              </p>
+              <button class="news-info-block-button">Weiterlesen</button>
             </div>
           </div>
         </div>
-      </div>
-      <div id="buttonMap" class="buttonMap">
-        <div class="topButtonMap"><i class="fas fa-street-view"></i></div>
-        <div class="bottomButtonMap"></div><span>locate us on the map</span>
       </div>
     </section>
-    <div id="map" class="map hidden"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.1026650165!2d150.65179546185027!3d-33.84735671951983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a32bfa355d%3A0xf14ad2a3d9b9e229!2z0JbQuNGC0L7QvNC40YAsINCW0LjRgtC-0LzQuNGA0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDEwMDAw!5e0!3m2!1sru!2sua!4v1586957254502!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-    <footer class="footer">
+    <section class="section-three">
       <div class="container">
-        <div class="footerBlock">
-          <h4>BeOnePage</h4>
-          <div class="socialFooterWrapper"><a href="#" class="socialFooterItem"><i class="fab fa-twitter-square"></i></a><a href="#" class="socialFooterItem"><i class="fab fa-facebook-square"></i></a><a href="#" class="socialFooterItem"><i class="fab fa-google-plus-square"></i></a><a href="#" class="socialFooterItem"><i class="fab fa-youtube-square"></i></a><a href="#" class="socialFooterItem"><i class="fab fa-vimeo-square"></i></a><a href="#" class="socialFooterItem"><i class="fas fa-heart"></i></a></div><span>Copyrights © 2016. All Rights Reserved. Powered by BeTheme .</span>
+        <div class="our-vision-block">
+          <h2>Our Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="our-vision-image"><img src="img/628.png"></div>
         </div>
       </div>
+    </section>
+    <footer>
+      <section class="section-footer-top">
+        <div class="container">
+          <div class="section-footer-top-block">
+            <div class="section-footer-top-wrapper">
+              <div class="footer-top-image"><img src="img/630.png"></div><span>Let them decide! &nbsp;</span><span> Pick out a &nbsp;</span><a href="#"> Gift Card &nbsp;</a><span>and give them choice!</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-footer-middle">
+        <div class="container">
+          <div class="section-footer-middle-wrapper">
+            <nav>
+              <div class="headline-menu-footer"><span>HELP & CONTACT</span></div>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Voucher Information</a></li>
+                <li><a href="#">Customer Service</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <div class="headline-menu-footer"><span>business</span></div>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Partnerprogramm</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <div class="headline-menu-footer"><span>Top Categories</span></div>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Buy Gift Vouchers</a></li>
+                <li><a href="#">Voucher Information</a></li>
+                <li><a href="#">Student Discount</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <div class="headline-menu-footer"><span>Account</span></div>
+              <ul>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Live Chat</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="section-footer-bottom">
+        <div class="logo-footer"><img src="img/logo-header.png"></div><span>© Copyright Workspace & Co, All Rights Reserved.</span>
+      </section>
     </footer>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/commonOwl.js"></script><a href="#sectionOne" id="buttonToTop" class="buttonToTop"></a>
   </body>
 </html>

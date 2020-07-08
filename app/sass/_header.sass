@@ -7,7 +7,10 @@ header
       display: flex
       justify-content: space-between
       flex-wrap: wrap
+      @media(max-width: 768px)
+        justify-content: center
       .logo
+        margin: 0 15px 15px 0
         height: 90px
         width: 70px
         img
@@ -15,40 +18,49 @@ header
           width: 100%
           object-fit: cover
       .search-header
+        flex: 1 1 60%
+        min-width: 300px
         display: flex
+        justify-content: center
         align-items: center
         position: relative
+        margin: 0 15px 15px 0
         input:first-child,  input:last-child
           border: none
           height: 35px
           outline: none
         input:first-child
-          width: 395px
+          width: 100%
+          max-width: 395px
           padding: 0 15px
           border-radius: 5px 0 0 5px
           background-color: rgba(240, 240, 240, 1)
           &[placeholder]
             font-size: 14px
             font-family: 'Montserrat', sans-serif
-        input:last-child
-          border: none
-          background-color: rgba(0, 153, 210, 1)
-          width: 35px
-          border-radius: 0 5px 5px 0
+        .button-search
           position: relative
-          display: block
-          cursor: pointer
-        &:after
-          content: ''
-          background-image: url(../img/glass.png)
-          background-repeat: no-repeat
-          background-position: center
-          position: absolute
-          height: 35px
           width: 35px
-          right: 0
-          bottom: calc(50% - 17px)
-          cursor: pointer
+          input
+            width: 100%
+            border: none
+            background-color: rgba(0, 153, 210, 1)
+
+            border-radius: 0 5px 5px 0
+            position: relative
+            display: block
+            cursor: pointer
+          &:after
+            content: ''
+            background-image: url(../img/glass.png)
+            background-repeat: no-repeat
+            background-position: center
+            position: absolute
+            height: 35px
+            width: 35px
+            right: 0
+            bottom: calc(50% - 17px)
+            cursor: pointer
       .service-block
         display: flex
         justify-content: center
@@ -89,15 +101,39 @@ header
       justify-content: space-between
       align-items: center
       background-color: rgba(220, 238, 247, 1)
-      margin: 0 -45px
+      margin: 0 -30px
       padding: 0 45px
+      position: relative
       nav
         flex: 1 1 90%
+        @media (max-width: 768px)
+          display: flex
+          opacity: 0
+          transform: translateX(200px)
+          transition: all .25s
+          z-index: -20
+          position: absolute
+          top: 45px
+          width: 320px
+          right: 0
+          background-color: rgba(220, 238, 247, 1)
+          padding: 0px 45px
+          ul
+            flex-direction: column
+            width: 100%
+            li
+              margin-right: -45px
+              padding: 20px 45px
+              margin-left: -45px
+
+            li:first-child
+              border-top: 1px solid rgba(255, 255,255, 1)
+            li:not(:last-child)
+              border-bottom: 1px solid rgba(255, 255,255, 1)
         ul
           display: flex
           justify-content: space-between
           li
-
             a
               text-decoration: none
               font-size: 16px
@@ -107,8 +143,38 @@ header
                 color: rgba(0, 153, 210, 1)
             &:not(:last-child)
               margin-right: 10px
+              @media (max-width: 768px)
+                margin: 0 -45px
 
+      .mobile-button-wrapper
+        display: none
+        flex: 1 1 90%
+        justify-content: flex-end
+        .mobile-button
+          height: 30px
+          width: 40px
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          cursor: pointer
+          transition: all .25s
 
+          span
+            height: 3px
+            width: 100%
+            background-color: rgba(0, 0, 0, 1)
+            transition: all .25s
+        .mobile-button.open
+          span:nth-child(1)
+            transform: rotate(45deg) translateY(14px)
+          span:nth-child(2)
+            width: 0
+          span:nth-child(3)
+            transform: rotate(-45deg) translateY(-14px)
+          &:hover
+            height: 30px
+        @media (max-width: 768px)
+          display: flex
       .font-size-block
         flex: 1 1 10%
         display: flex
@@ -132,4 +198,11 @@ header
           font-size: 14px
         span:nth-child(3)
           font-size: 16px
+    .header-bottom-wrapper.mobile
+      nav
+        opacity: 1
+        transform: translateX(0px)
+        z-index: 20
+
+
 

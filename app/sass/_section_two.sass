@@ -1,0 +1,56 @@
+.section-two
+  display: flex
+  justify-content: center
+  .container
+
+    .news-wrapper
+      display: flex
+      flex-wrap: wrap
+      padding-bottom: calc(20px + 3vw)
+      .news-item
+        flex: 1 1 calc(50% - 30px)
+        display: flex
+        min-width: 360px
+        border: 2px solid rgba(240, 240, 240, 1)
+        margin: 15px
+        @media(max-width: 450px)
+          flex-direction: column
+          min-width: 250px
+          margin: 15px 0
+        .news-block-image
+          flex: 1 1 50%
+          img
+            height: 100%
+            width: 100%
+            object-fit: cover
+        .news-info-block
+          flex: 1 1 50%
+          padding: 40px 10px
+          display: flex
+          flex-direction: column
+          align-items: center
+          p
+            color: rgba(145, 145, 145, 1)
+            text-align: center
+            line-height: 1.5
+            margin-bottom: 70px
+          .news-info-block-button
+            max-width: 180px
+            color: rgba(255, 255, 255, 1)
+            background-color: rgba(0, 153, 210, 1)
+
+            font-size: 14px
+            padding: 15px calc(20px + 2vw)
+            cursor: pointer
+            white-space: nowrap
+            border: 2px solid rgba(0, 153, 210, 0)
+            transition: all .25s
+            &:hover
+              background-color: rgba(255, 255, 255, 1)
+              color: rgba(0, 153, 210, 1)
+              border: 2px solid rgba(0, 153, 210, 1)
+      .news-item.reverse
+        .news-block-image
+          order: 2
+        .news-info-block
+          order: 1

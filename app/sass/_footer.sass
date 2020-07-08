@@ -1,0 +1,102 @@
+footer
+  .section-footer-top
+    display: flex
+    justify-content: center
+
+    .section-footer-top-block
+      padding: 5px 0
+      border-bottom: 1px solid rgba(240, 240, 240, 1)
+      .section-footer-top-wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 16px
+        padding: 8px 0 14px 0
+        background-color: rgba(220, 238, 247, 1)
+        white-space: nowrap
+        @media(max-width: 768px)
+          flex-direction: column
+          span, a
+            margin-bottom: 5px
+
+
+
+        .footer-top-image
+          margin-right: 25px
+          margin-bottom: 10px
+          @media(max-width: 768px)
+            margin-right: 0px
+        span:nth-child(2)
+          font-family: 'MontserratBold',sans-serif
+          text-transform: uppercase
+          font-weight: bold
+        a
+          color: rgba(40, 40, 40, 1)
+  .section-footer-middle
+    display: flex
+    justify-content: center
+    padding-top: 20px
+    .section-footer-middle-wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      @media (max-width: 800px)
+        justify-content: center
+      nav
+        flex: 1 1 25%
+        min-width: 150px
+        margin-bottom: 20px
+        @media (max-width: 768px)
+          display: flex
+          flex-direction: column
+          align-items: center
+        .headline-menu-footer
+          text-transform: uppercase
+          margin-bottom: 35px
+        ul
+          li
+            margin-bottom: 15px
+            a
+              text-decoration: none
+              color: rgba(145, 145, 145, 1)
+        &:first-child
+          .headline-menu-footer
+            margin-bottom: 25px
+        &:nth-child(3)
+          ul
+            li
+              a
+                color: rgba(0, 0, 0, 1)
+        &:nth-child(4)
+          ul
+            li
+              position: relative
+              &:before, &:after
+                content: ''
+                height: 2px
+                width: 10px
+                position: absolute
+                background-color: rgba(145, 145, 145, 1)
+                top: calc(50% - 1px)
+                left: -20px
+              &:after
+                transform: rotate(90deg)
+  .section-footer-bottom
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    padding: 40px 0
+    background-color: rgba(240, 240, 240, 1)
+    .logo-footer
+      height: 35px
+      width: 25px
+      margin-bottom: 15px
+      img
+        height: 100%
+        width: 100%
+        object-fit: contain
+    span
+      text-align: center
+      color: rgba(145, 145, 145, 1)
+      line-height: 2
